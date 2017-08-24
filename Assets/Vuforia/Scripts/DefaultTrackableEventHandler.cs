@@ -5,6 +5,7 @@ Confidential and Proprietary - Protected under copyright and other laws.
 ==============================================================================*/
 
 using UnityEngine;
+using UnityEngine.UI;
 
 namespace Vuforia
 {
@@ -36,6 +37,9 @@ namespace Vuforia
 
             bird = GameObject.Find("Bird");
             canvas = GameObject.Find("Canvas").GetComponent<Canvas>();
+            if(Application.platform == RuntimePlatform.Android){
+                canvas.gameObject.transform.GetChild(0).GetComponent<Text>().fontSize = 25;
+            }
             
         }
 
