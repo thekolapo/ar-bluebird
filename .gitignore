@@ -69,6 +69,7 @@ x64/
 *Build/*
 *Build
 *.app/*
+*.keystore
 
 
 # OS Generated
