@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: ba27d9c6a4f914e2faa35f0ca53ebcd1
+timeCreated: 1500717860
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Radikal-Light
+  fontNames:
+  - Radikal-Light
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
