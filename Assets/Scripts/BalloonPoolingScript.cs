@@ -28,7 +28,8 @@ public class BalloonPoolingScript : MonoBehaviour {
 			obj.transform.localScale = balloon.transform.localScale;
 			balloon.transform.localPosition = objPos;
 			balloonList.Add(obj);
-		}	
+		}
+		balloonList.Add(balloon);	
 		
 	}
 
@@ -51,6 +52,10 @@ public class BalloonPoolingScript : MonoBehaviour {
 		balloonList.Add(obj);
 	}
 
-	
+	public void SwitchParentOfBalloons(Transform newParent){
+		foreach(GameObject balloon in balloonList){
+			balloon.transform.parent = newParent;
+		}
+	}	
 
 }

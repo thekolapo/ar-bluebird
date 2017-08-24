@@ -17,6 +17,8 @@ namespace Vuforia
         #region PRIVATE_MEMBER_VARIABLES
  
         private TrackableBehaviour mTrackableBehaviour;
+        private GameObject bird;
+        public Canvas canvas;
     
         #endregion // PRIVATE_MEMBER_VARIABLES
 
@@ -31,6 +33,10 @@ namespace Vuforia
             {
                 mTrackableBehaviour.RegisterTrackableEventHandler(this);
             }
+
+            bird = GameObject.Find("Bird");
+            canvas = GameObject.Find("Canvas").GetComponent<Canvas>();
+            
         }
 
         #endregion // UNTIY_MONOBEHAVIOUR_METHODS
@@ -68,6 +74,15 @@ namespace Vuforia
 
         private void OnTrackingFound()
         {
+            if(canvas){
+                canvas.enabled = false;
+            }
+
+            if(transform.childCount == 0){
+                bird.transform.parent = transform;
+                BalloonPoolingScript.main.SwitchParentOfBalloons(transform);
+            }
+            
             Renderer[] rendererComponents = GetComponentsInChildren<Renderer>(true);
             Collider[] colliderComponents = GetComponentsInChildren<Collider>(true);
 
@@ -89,6 +104,10 @@ namespace Vuforia
 
         private void OnTrackingLost()
         {
+            if(canvas){
+                canvas.enabled = true;
+            }
+            
             Renderer[] rendererComponents = GetComponentsInChildren<Renderer>(true);
             Collider[] colliderComponents = GetComponentsInChildren<Collider>(true);
 
