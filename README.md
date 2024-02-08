@@ -1,9 +1,10 @@
-[![Alt text](https://img.youtube.com/vi/0Tv_wVSeEl4/0.jpg)](https://www.youtube.com/watch?v=0Tv_wVSeEl4)
-
 # Blue Bird
+
 A marker based Augmented Reality experiment developed using [Unity](https://unity3d.com/) and [Vuforia](https://www.vuforia.com/).
 
 To try it out on your phone, [downlaod](https://play.google.com/store/apps/details?id=com.Kolapo.HappyHour) the android apk and install. Run the app and point your phone camera towards a US one-dollar bill or a hundred naira note, then watch the cute bird pop the balloons.
+
+https://github.com/thekolapo/ar-bluebird/assets/4974861/449f4882-f7a5-4c61-b995-ae090aadf8f6
 
 Watch the demo [here](https://twitter.com/kolapo_/status/896677421243564033)
 
